@@ -1,0 +1,29 @@
+# CodeBot backend dependencies
+# Install with:  pip install -r requirements.txt
+#
+# Only direct dependencies are listed. Their own dependencies are resolved by pip.
+# Versions are pinned to the ones this project was built and verified against.
+
+# Web framework and ASGI server
+fastapi==0.142.2
+uvicorn[standard]==0.54.0
+
+# Data validation and settings
+pydantic==2.13.5
+pydantic-settings==2.15.0
+email-validator==2.3.0
+
+# Database (MongoDB Atlas compatible, async driver)
+pymongo==4.18.2
+
+# Authentication: bcrypt hashing and JWT signing
+bcrypt==5.0.0
+PyJWT==2.15.1
+
+# AI provider, called from the backend only
+openai==3.24.0
+
+# Testing
+pytest==9.1.1
+pytest-asyncio==1.4.0
+httpx==0.28.1
